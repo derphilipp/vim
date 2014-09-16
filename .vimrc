@@ -1,6 +1,17 @@
-execute pathogen#infect()
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-source $HOME/.vim/python.vim
+Bundle 'gmarik/vundle'
+Bundle 'klen/python-mode'
+Bundle 'scrooloose/syntastic'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'python-rope/ropevim'
+
+"source $HOME/.vim/python.vim
 
 set number 
 syntax on
