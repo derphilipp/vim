@@ -1,0 +1,28 @@
+snippet t
+	def test_${1:testname}(self${2}):
+		# Arrange
+		${3:# code}
+		# Act
+		${4:# code}
+		# Assert
+		self.assert${5:Equal}(${6:expected}, ${7:value})
+		
+snippet testc
+	class Test${1:Classname}(unittest.TestCase):
+		def setUp(self):
+			${2:# setup}
+			pass
+
+snippet START
+	#!/usr/bin/env python
+	# -*- encoding: utf-8 -*-
+	import unittest
+	
+	class Test${1:Classname}(unittest.TestCase):
+
+		def test_${2:TestName}(self):
+			${3:# Act}
+			self.assertEqual(${5:expected}, ${6:value})
+	
+	if __name__=="__main__":
+		unittest.main()
