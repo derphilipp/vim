@@ -18,11 +18,12 @@ snippet START
 	# -*- encoding: utf-8 -*-
 	import unittest
 	
+
 	class Test${1:Classname}(unittest.TestCase):
 
 		def test_${2:TestName}(self):
 			${3:# Act}
 			self.assertEqual(${5:expected}, ${6:value})
 	
-	if __name__=="__main__":
+	if __name__ == "__main__":
 		unittest.main()

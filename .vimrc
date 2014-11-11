@@ -42,7 +42,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'fisadev/fisa-vim-colorscheme'
 Bundle 'Townk/vim-autoclose'
 Bundle 'Shougo/neocomplcache.vim'
-Bundle 'fisadev/vim-isort'
+"Bundle 'fisadev/vim-isort'
 Bundle 'bling/vim-airline' 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1 
